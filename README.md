@@ -2,7 +2,7 @@
 
 Página web HTML5 que integra elementos web convencionales con un canvas P5.js interactivo de fondo.
 
-## 🎨 Características
+## Características
 
 ### Integración Web + P5.js
 - **Canvas de fondo**: Sistema de partículas interactivas que reacciona al movimiento del ratón
@@ -52,14 +52,14 @@ Página web HTML5 que integra elementos web convencionales con un canvas P5.js i
 El sistema de partículas está inspirado en ejemplos comunes de OpenProcessing.org, específicamente en sistemas de partículas con conexiones visuales.
 
 ### Modificaciones Realizadas
-1. ✨ Sistema de atracción/repulsión hacia el ratón
-2. 🎭 Efecto de onda que emana desde el cursor
-3. 🌈 Colores dinámicos basados en velocidad de partículas
-4. 💫 Gradientes de opacidad en las conexiones
-5. ✨ Efecto glow en partículas cercanas al ratón
-6. ⚡ Optimización de rendimiento
-7. 🖱️ Añadir partículas con clic del ratón
-8. 🔄 Redimensionamiento automático del canvas
+1. Sistema de atracción/repulsión hacia el ratón
+2. Efecto de onda que emana desde el cursor
+3. Colores dinámicos basados en velocidad de partículas
+4. Gradientes de opacidad en las conexiones
+5. Efecto glow en partículas cercanas al ratón
+6. Optimización de rendimiento
+7. Añadir partículas con clic del ratón
+8. Redimensionamiento automático del canvas
 
 ## 🚀 Cómo Usar
 
