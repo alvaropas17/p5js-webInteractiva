@@ -78,14 +78,14 @@ La página se adapta a diferentes tamaños de pantalla:
 
 ## 🎯 Cumplimiento de Requisitos
 
-✅ Página HTML5 completa
-✅ Elementos web convencionales: texto, imágenes (placeholder), formularios, menús
-✅ Elementos ubicados en DIVs correspondientes
-✅ Canvas P5.js integrado de forma natural
-✅ Interacción con el ratón
-✅ Animación y efectos visuales interactivos
-✅ Código modificado con mejoras sobre ejemplos base
-✅ Fuentes citadas en el código y README
+- ✅ Página HTML5 completa
+- ✅ Elementos web convencionales: texto, imágenes (placeholder), formularios, menús
+- ✅ Elementos ubicados en DIVs correspondientes
+- ✅ Canvas P5.js integrado de forma natural
+- ✅ Interacción con el ratón
+- ✅ Animación y efectos visuales interactivos
+- ✅ Código modificado con mejoras sobre ejemplos base
+- ✅ Fuentes citadas en el código y README
 
 ## 🎨 Paleta de Colores
 
