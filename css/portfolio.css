@@ -1,0 +1,10 @@
+/* Fondos personalizados para los placeholders de portfolio */
+.placeholder-image.project1-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.placeholder-image.project2-bg {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+.placeholder-image.project3-bg {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}

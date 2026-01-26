@@ -1,0 +1,33 @@
+# Node
+node_modules/
+
+# VSCode
+.vscode/
+.history/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Entornos
+.env
+.venv/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Otros
+*.swp
+*.swo
+
+# Salidas de compilación
+/dist/
+/build/
+
+# Archivos personales
+*.local
