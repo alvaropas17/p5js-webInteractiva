@@ -1,187 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Interactivo - P5.js</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Canvas P5.js de fondo -->
     <div id="canvas-container"></div>
 
     <!-- Contenido principal flotante -->
     <div id="content">
-        <!-- Navegación -->
-        <nav id="main-nav">
-            <div class="nav-container">
-                <div class="logo">
-                    <h1>Creative<span>Lab</span></h1>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      <!-- Navegación -->
+      <nav id="main-nav">
+        <div class="nav-container">
+          <div class="logo">
+            <h1>Creative<span>Lab</span></h1>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- Sección Hero -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h2 class="hero-title">Web multimedia interactiva</h2>
-                <p class="hero-subtitle">Experiencias visuales que cobran vida con tu movimiento</p>
-                <!-- <button class="cta-button">Descubre Más</button> -->
-                <!-- Cuadro de interacciones -->
-                <div class="interaction-box">
-                    <h3>🖱️ Interacciones disponibles</h3>
-                    <ul>
-                        <li><strong>Mueve el ratón</strong>: Las partículas siguen el cursor y generan conexiones
-                            dinámicas.</li>
-                        <li><strong>Haz clic</strong>: Añade nuevas partículas en la posición del ratón.</li>
-                        <li><strong>Mantén pulsado el clic</strong>: Las partículas se alejan del cursor (modo
-                            repulsión).</li>
-                        <li><strong>Redimensiona la ventana</strong>: El canvas se adapta automáticamente.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <!-- Sección Hero -->
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <h2 class="hero-title">Web multimedia interactiva</h2>
+          <p class="hero-subtitle">
+            Experiencias visuales que cobran vida con tu movimiento
+          </p>
+          <!-- <button class="cta-button">Descubre Más</button> -->
+          <!-- Cuadro de interacciones -->
+          <div class="interaction-box">
+            <h3>🖱️ Interacciones disponibles</h3>
+            <ul>
+              <li>
+                <strong>Mueve el ratón</strong>: Las partículas siguen el cursor
+                y generan conexiones dinámicas.
+              </li>
+              <li>
+                <strong>Haz clic</strong>: Añade nuevas partículas en la
+                posición del ratón.
+              </li>
+              <li>
+                <strong>Mantén pulsado el clic</strong>: Las partículas se
+                alejan del cursor (modo repulsión).
+              </li>
+              <li>
+                <strong>Redimensiona la ventana</strong>: El canvas se adapta
+                automáticamente.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección Servicios -->
-        <section id="servicios" class="services">
-            <div class="container">
-                <h2 class="section-title">Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🎨</div>
-                        <h3>Diseño Web</h3>
-                        <p>Creamos experiencias digitales únicas y memorables adaptadas a tu marca.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">💻</div>
-                        <h3>Desarrollo</h3>
-                        <p>Código limpio y eficiente con las últimas tecnologías web.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🎭</div>
-                        <h3>Animaciones</h3>
-                        <p>Efectos visuales interactivos que cautivan a tu audiencia.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">📱</div>
-                        <h3>Responsive</h3>
-                        <p>Diseños que se adaptan perfectamente a cualquier dispositivo.</p>
-                    </div>
-                </div>
+      <!-- Sección Servicios -->
+      <section id="servicios" class="services">
+        <div class="container">
+          <h2 class="section-title">Nuestros Servicios</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">🎨</div>
+              <h3>Diseño Web</h3>
+              <p>
+                Creamos experiencias digitales únicas y memorables adaptadas a
+                tu marca.
+              </p>
             </div>
-        </section>
+            <div class="service-card">
+              <div class="service-icon">💻</div>
+              <h3>Desarrollo</h3>
+              <p>Código limpio y eficiente con las últimas tecnologías web.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🎭</div>
+              <h3>Animaciones</h3>
+              <p>Efectos visuales interactivos que cautivan a tu audiencia.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">📱</div>
+              <h3>Responsive</h3>
+              <p>
+                Diseños que se adaptan perfectamente a cualquier dispositivo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección Portfolio -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2 class="section-title">Portfolio</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image project1-bg">
-                                <span>Proyecto 1</span>
-                            </div>
-                        </div>
-                        <h3>E-commerce Moderno</h3>
-                        <p>Plataforma de venta online con experiencia de usuario excepcional</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image project2-bg">
-                                <span>Proyecto 2</span>
-                            </div>
-                        </div>
-                        <h3>App Corporativa</h3>
-                        <p>Solución empresarial con animaciones suaves y diseño elegante</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image project3-bg">
-                                <span>Proyecto 3</span>
-                            </div>
-                        </div>
-                        <h3>Landing Page</h3>
-                        <p>Página de aterrizaje con alta conversión y efectos visuales</p>
-                    </div>
+      <!-- Sección Portfolio -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <div class="placeholder-image project1-bg">
+                  <span>Proyecto 1</span>
                 </div>
+              </div>
+              <h3>E-commerce Moderno</h3>
+              <p>
+                Plataforma de venta online con experiencia de usuario
+                excepcional
+              </p>
             </div>
-        </section>
-
-        <!-- Sección Contacto -->
-        <section id="contacto" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contáctanos</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>¿Tienes un proyecto en mente?</h3>
-                        <p>Estamos aquí para hacer realidad tus ideas. Cuéntanos sobre tu proyecto y te responderemos lo
-                            antes posible.</p>
-                        <div class="info-item">
-                            <strong>📧 Email:</strong>
-                            <p>info@creativelab.com</p>
-                        </div>
-                        <div class="info-item">
-                            <strong>📞 Teléfono:</strong>
-                            <p>+34 123 456 789</p>
-                        </div>
-                        <div class="info-item">
-                            <strong>📍 Ubicación:</strong>
-                            <p>Madrid, España</p>
-                        </div>
-                    </div>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..."
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Enviar Mensaje</button>
-                    </form>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <div class="placeholder-image project2-bg">
+                  <span>Proyecto 2</span>
                 </div>
+              </div>
+              <h3>App Corporativa</h3>
+              <p>
+                Solución empresarial con animaciones suaves y diseño elegante
+              </p>
             </div>
-        </section>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <div class="placeholder-image project3-bg">
+                  <span>Proyecto 3</span>
+                </div>
+              </div>
+              <h3>Landing Page</h3>
+              <p>Página de aterrizaje con alta conversión y efectos visuales</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2026 CreativeLab. Todos los derechos reservados.</p>
-                <p class="attribution">
-                    <small>Efectos visuales inspirados en sistemas de partículas interactivas.
-                        Modificado y adaptado para incluir conexiones dinámicas entre partículas
-                        y respuesta mejorada al movimiento del ratón.</small>
-                </p>
+      <!-- Sección Contacto -->
+      <section id="contacto" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contáctanos</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>¿Tienes un proyecto en mente?</h3>
+              <p>
+                Estamos aquí para hacer realidad tus ideas. Cuéntanos sobre tu
+                proyecto y te responderemos lo antes posible.
+              </p>
+              <div class="info-item">
+                <strong>📧 Email:</strong>
+                <p>info@creativelab.com</p>
+              </div>
+              <div class="info-item">
+                <strong>📞 Teléfono:</strong>
+                <p>+34 123 456 789</p>
+              </div>
+              <div class="info-item">
+                <strong>📍 Ubicación:</strong>
+                <p>Madrid, España</p>
+              </div>
             </div>
-        </footer>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="¿En qué podemos ayudarte?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Cuéntanos sobre tu proyecto..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-button">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2026 CreativeLab. Todos los derechos reservados.</p>
+          <p class="attribution">
+            <small
+              >Efectos visuales inspirados en sistemas de partículas
+              interactivas. Modificado y adaptado para incluir conexiones
+              dinámicas entre partículas y respuesta mejorada al movimiento del
+              ratón.</small
+            >
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script src="sketch.js"></script>
-</body>
-
+  </body>
 </html>
