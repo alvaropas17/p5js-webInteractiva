@@ -11,99 +11,91 @@ Página web HTML5 que integra elementos web convencionales con un canvas P5.js i
 - **Efectos visuales**: Backdrop blur y transparencias para integración natural
 
 ### Elementos HTML5 Incluidos
+# RocketLaunch — Web Interactiva con P5.js
 
-#### Navegación
-- Menú sticky con efecto glassmorphism
-- Enlaces con animación hover
-- Logo con estilo moderno
+Pequeña web multimedia que combina contenido HTML5 (texto, imágenes, formularios, menús) con un canvas P5.js interactivo de fondo.
 
-#### Secciones
-1. **Hero**: Llamada a la acción principal
-2. **Servicios**: Grid de tarjetas con iconos
-3. **Portfolio**: Galería de proyectos con imágenes placeholder
-4. **Contacto**: Formulario funcional con campos de texto y textarea
-5. **Footer**: Información y atribución
+## Resumen rápido
 
-### Interactividad P5.js
+- Tema: lanzamientos de cohetes (sección "Próximos lanzamientos", galería de imágenes y lista informativa).
+- Fondo: canvas P5.js con sistema de partículas tipo "estrellas" que reacciona al ratón.
+- Diseño: responsive, contenido flotante sobre el canvas.
 
-#### Efectos del Ratón
-- **Movimiento**: Las partículas son atraídas hacia el cursor
-- **Clic**: Añade nuevas partículas en la posición del ratón
-- **Clic sostenido**: Cambia a modo repulsión (las partículas huyen)
-- **Efecto glow**: Halo luminoso alrededor del cursor
+## Características principales
 
-#### Características Visuales
-- Partículas conectadas por líneas cuando están cerca
-- Colores dinámicos basados en la velocidad
-- Efecto de brillo en partículas cercanas al ratón
-- Movimiento orgánico con física básica
-- Límite automático en los bordes del canvas
+- Integración Web + P5.js: el canvas actúa como fondo interactivo mientras el contenido (DIVs) flota encima (z-index mayor).
+- Interacción con el ratón en el canvas: partículas atraídas/repelidas por el cursor, clic para añadir partículas y efecto glow.
+- Sección "Próximos lanzamientos": lista informativa centrada y galería de cohetes con nombre y bandera por cohete.
+- Formulario de aportes: formulario para que colaboradores propongan código, diseño, pruebas, documentación o ideas.
+- Archivos de estilos separados: `css/styles.css`, `css/sections.css` y `css/custom-styles.css` contienen los estilos.
 
-## 🔧 Tecnologías Utilizadas
+## Archivos relevantes
 
-- **HTML5**: Estructura semántica
-- **CSS3**: Estilos modernos con variables CSS, gradientes, backdrop-filter
-- **JavaScript**: Lógica de interacción
-- **P5.js v1.7.0**: Librería de visualización creativa
+- `index.html` — Estructura HTML de la web (secciones: Hero, Lanzamientos, Portfolio, Contacto, Footer).
+- `sketch.js` — Código P5.js: sistema de partículas interactivo. Contiene comentario con la referencia original y lista de modificaciones.
+- `css/styles.css`, `css/sections.css` — Estilos globales del proyecto.
+- `css/custom-styles.css` — Estilos añadidos para la galería, lanzamientos y ajustes recientes.
+- `img/` — Imágenes de cohetes (falcon9.png, Ariane6.png, Long March 5B.png, GSLV Mk III.png, y el logo).
 
-## 📚 Créditos y Fuentes
+## Créditos y modificaciones
 
-### Inspiración
-El sistema de partículas está inspirado en ejemplos comunes de OpenProcessing.org, específicamente en sistemas de partículas con conexiones visuales.
+El sistema de partículas está inspirado por ejemplos en OpenProcessing.org y la referencia original está citada dentro de `sketch.js`.
+En `sketch.js` se documentan las modificaciones realizadas, entre ellas:
 
-### Modificaciones Realizadas
-1. Sistema de atracción/repulsión hacia el ratón
-2. Efecto de onda que emana desde el cursor
-3. Colores dinámicos basados en velocidad de partículas
-4. Gradientes de opacidad en las conexiones
-5. Efecto glow en partículas cercanas al ratón
-6. Optimización de rendimiento
-7. Añadir partículas con clic del ratón
-8. Redimensionamiento automático del canvas
+1. Atracción/repulsión al cursor
+2. Efecto de onda desde el cursor
+3. Colores dinámicos para partículas (ahora estilo "estrellas")
+4. Gradientes/alpha en conexiones
+5. Glow y efectos de brillo
+6. Añadir partículas con clic
+7. Optimización y ajuste de parámetros
 
-## 🚀 Cómo Usar
+## Cómo ejecutar (local)
 
-1. Abre `index.html` en un navegador moderno
-2. Mueve el ratón sobre la página para ver las partículas reaccionar
-3. Haz clic para añadir nuevas partículas
-4. Mantén presionado el clic para activar el modo repulsión
-5. Navega por las diferentes secciones usando el menú
+1. Abrir `index.html` en un navegador moderno (Chrome, Edge, Firefox). No requiere servidor para pruebas básicas.
 
-## 📱 Responsive Design
+Opcional — servir desde un servidor local (recomendado para desarrollo):
 
-La página se adapta a diferentes tamaños de pantalla:
-- **Desktop**: Layout completo con grid de múltiples columnas
-- **Tablet**: Grid adaptativo con menos columnas
-- **Mobile**: Layout de una sola columna con menú compactado
+```bash
+# con Python 3
+python -m http.server 8000
 
-## 🎯 Cumplimiento de Requisitos
-
-- ✅ Página HTML5 completa
-- ✅ Elementos web convencionales: texto, imágenes (placeholder), formularios, menús
-- ✅ Elementos ubicados en DIVs correspondientes
-- ✅ Canvas P5.js integrado de forma natural
-- ✅ Interacción con el ratón
-- ✅ Animación y efectos visuales interactivos
-- ✅ Código modificado con mejoras sobre ejemplos base
-- ✅ Fuentes citadas en el código y README
-
-## 🎨 Paleta de Colores
-
-- Primary: `#6366f1` (Indigo)
-- Secondary: `#8b5cf6` (Purple)
-- Background: Gradiente oscuro `#1e1e2e` a `#2a2a40`
-- Text: Blanco con variaciones de opacidad
-
-## 📄 Estructura de Archivos
-
+# o con Node.js (si tienes http-server instalado)
+npx http-server -p 8000
 ```
-p5js-v2/
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
-├── sketch.js           # Código P5.js
-└── README.md           # Documentación
-```
+
+Luego abrir `http://localhost:8000` en tu navegador.
+
+## Notas sobre el formulario
+
+- El formulario de "Aportes" recoge: Nombre, Email, Tipo de aporte y Sugerencias.
+- Actualmente envía mediante POST si integras un endpoint; si quieres puedo añadir almacenamiento local (guardar en `localStorage` o simular envío a un archivo JSON).
+
+## Cumplimiento de requisitos de la tarea
+
+- Página HTML5 con elementos convencionales: ✅
+- Canvas P5.js integrado y aportando espectacularidad: ✅
+- Interacción con ratón en canvas: ✅
+- Código P5.js referenciado y modificado (cita incluida): ✅
+- Diseño con DIVs flotando sobre el canvas: ✅
+
+## Cambios recientes notables
+
+- Tema actualizado a "lanzamientos de cohetes" con galería y lista informativa.
+- Paleta visual ajustada hacia tonos azules espaciales y acentos en amarillo.
+- Partículas recoloreadas a tonos blanco/amarillo tipo "estrellas".
+- Se reemplazó la sección de contacto por un formulario de aportes y se ajustó su layout para apilar el formulario debajo del texto y limitar su ancho.
+
+## Siguientes pasos recomendados (opcional)
+
+- Añadir envío real del formulario (endpoint) o guardar aportes en `localStorage`/archivo JSON.
+- Ajustar accesibilidad (labels/aria) y validación del formulario.
+- Añadir tests básicos o scripts de lint CSS/JS.
+
+## Contacto
+
+Si quieres que conecte el formulario a un endpoint, almacene los aportes localmente, o adapte colores/anchuras, dime qué prefieres y lo implemento.
 
 ---
 
-**Desarrollado como proyecto educativo - 2026**
+_Actualizado: Feb 2026_
