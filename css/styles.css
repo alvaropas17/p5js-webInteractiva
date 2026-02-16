@@ -6,13 +6,13 @@
 }
 
 :root {
-  --primary-color: #6366f1;
-  --secondary-color: #8b5cf6;
+  --primary-color: #042844;
+  --secondary-color: #d6803b;
   --text-color: #ffffff;
-  --text-dark: #c7c7c7;
-  --bg-overlay: rgba(0, 0, 0, 0.6);
-  --card-bg: rgba(255, 255, 255, 0.95);
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --text-dark: #ffe5c2;
+  --bg-overlay: rgba(4, 40, 68, 0.85);
+  --card-bg: rgba(4, 40, 68, 0.95);
+  --shadow: 0 10px 30px rgba(4, 40, 68, 0.3);
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(135deg, #1e1e2e 0%, #2a2a40 100%);
+  background: linear-gradient(135deg, #020a15 0%, #041423 100%);
 }
 
 /* Contenido flotante sobre el canvas */
@@ -42,6 +42,70 @@ body {
 
 #content * {
   pointer-events: auto;
+}
+
+/* Futurista: Logo */
+.logo h1, .logo h1 span {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif !important;
+  letter-spacing: 2px;
+}
+.logo h1 {
+  font-size: 1.3em !important;
+  color: var(--secondary-color) !important;
+  text-shadow: none !important;
+}
+.logo h1 span {
+  color: #fff !important;
+  font-weight: 300;
+}
+
+/* Sección lanzamientos */
+.launches {
+  padding: 80px 20px;
+}
+.launches .section-title {
+  color: #6eb8ff !important;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.launch-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.launch-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 0;
+  border-bottom: 1px solid rgba(110, 184, 255, 0.2);
+}
+.launch-item:last-child {
+  border-bottom: none;
+}
+.launch-name {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 1.1em;
+  color: #fff;
+  letter-spacing: 0.5px;
+  flex: 1;
+}
+.launch-country {
+  color: #fff;
+  padding: 0 1em;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.launch-date {
+  color: #4a9eff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 0.95em;
+  min-width: 100px;
+  text-align: right;
 }
 
 /* Navegación */
@@ -94,12 +158,12 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary-color);
+  background: #6eb8ff;
   transition: width 0.3s ease;
 }
 
 .nav-menu a:hover {
-  color: var(--primary-color);
+  color: #6eb8ff;
 }
 
 .nav-menu a:hover::after {
@@ -134,10 +198,10 @@ body {
 /* Cuadro de interacciones */
 .interaction-box {
   margin: 35px auto 0 auto;
-  background: rgba(255, 255, 255, 0.13);
-  border: 2px solid var(--primary-color);
+  background: rgba(20, 30, 50, 0.4);
+  border: 2px solid #6eb8ff;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 4px 24px rgba(74, 158, 255, 0.15);
   padding: 24px 28px 18px 28px;
   max-width: 420px;
   color: var(--text-dark);
@@ -148,7 +212,7 @@ body {
 }
 .interaction-box h3 {
   margin-bottom: 12px;
-  color: var(--primary-color);
+  color: #6eb8ff;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -162,7 +226,7 @@ body {
   line-height: 1.5;
 }
 .interaction-box strong {
-  color: var(--secondary-color);
+  color: #4a9eff;
 }
 
 .hero-title {
@@ -171,8 +235,8 @@ body {
   margin-bottom: 20px;
   background: linear-gradient(
     135deg,
-    var(--primary-color),
-    var(--secondary-color)
+    #4a9eff,
+    #6eb8ff
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -192,8 +256,8 @@ body {
   color: white;
   background: linear-gradient(
     135deg,
-    var(--primary-color),
-    var(--secondary-color)
+    #4a9eff,
+    #6eb8ff
   );
   border: none;
   border-radius: 50px;
@@ -201,12 +265,12 @@ body {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+  box-shadow: 0 6px 20px rgba(74, 158, 255, 0.6);
 }
 
 /* Títulos de sección */
@@ -214,7 +278,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 50px;
-  color: var(--text-color);
+  color: #6eb8ff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 

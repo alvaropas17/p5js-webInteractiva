@@ -35,8 +35,8 @@ function setup() {
 }
 
 function draw() {
-  // Fondo semi-transparente para efecto de estela
-  background(30, 30, 46, 25);
+  // Fondo semi-transparente para efecto de estela (azul oscuro espacial)
+  background(4, 20, 35, 25);
 
   // Actualizar y dibujar conexiones
   for (let i = 0; i < particles.length; i++) {
@@ -53,9 +53,9 @@ function draw() {
       );
 
       if (d < maxDistance) {
-        let alpha = map(d, 0, maxDistance, 100, 0);
-        stroke(99, 102, 241, alpha);
-        strokeWeight(1);
+        let alpha = map(d, 0, maxDistance, 80, 0);
+        stroke(255, 255, 200, alpha);
+        strokeWeight(0.8);
         line(
           particles[i].pos.x,
           particles[i].pos.y,
@@ -81,9 +81,9 @@ function drawMouseGlow() {
   push();
   noFill();
   for (let i = 0; i < 3; i++) {
-    let alpha = map(i, 0, 3, 50, 0);
-    stroke(139, 92, 246, alpha);
-    strokeWeight(2);
+    let alpha = map(i, 0, 3, 40, 0);
+    stroke(255, 255, 220, alpha);
+    strokeWeight(1.5);
     let size = 30 + i * 15;
     ellipse(mouseX, mouseY, size, size);
   }
@@ -97,8 +97,8 @@ class Particle {
     this.acc = createVector(0, 0);
     this.maxSpeed = 2;
     this.size = random(2, 5);
-    this.baseColor = color(99, 102, 241);
-    this.glowColor = color(139, 92, 246);
+    this.baseColor = color(255, 255, 220);
+    this.glowColor = color(255, 245, 180);
   }
 
   update() {
@@ -139,7 +139,7 @@ class Particle {
     // Efecto de brillo si está cerca del ratón
     if (nearMouse) {
       let glowSize = map(distToMouse, 0, mouseInfluence, 20, 0);
-      fill(139, 92, 246, 30);
+      fill(255, 245, 180, 40);
       noStroke();
       ellipse(this.pos.x, this.pos.y, this.size + glowSize);
     }

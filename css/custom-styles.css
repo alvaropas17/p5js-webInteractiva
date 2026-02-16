@@ -1,0 +1,151 @@
+/* Estilos personalizados para la página de lanzamientos */
+
+/* Logo */
+.logo-img {
+  height: 60px;
+  width: auto;
+  max-width: 180px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+
+/* Sección de lanzamientos */
+.launches-section {
+  padding: 80px 20px;
+}
+
+.launches-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.launches-title {
+  color: #6eb8ff;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* Galería de cohetes */
+.rocket-gallery {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  margin-bottom: 4em;
+  flex-wrap: wrap;
+}
+
+.rocket-card {
+  flex: 0 1 220px;
+  text-align: center;
+}
+
+.rocket-card-image {
+  background: rgba(10, 20, 40, 0.6);
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(74, 158, 255, 0.2);
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rocket-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.rocket-name {
+  margin-top: 1em;
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: #6eb8ff;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.rocket-country {
+  color: #fff;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 0.3em;
+}
+
+.rocket-country .flag {
+  font-size: 1.3em;
+}
+
+/* Lista de lanzamientos */
+.launch-list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Forzar apilamiento del contenido de contacto (formulario debajo del texto) */
+.contact-content.stacked {
+  grid-template-columns: 1fr !important;
+  gap: 30px !important;
+}
+.contact-content.stacked .contact-info {
+  order: 0;
+}
+.contact-content.stacked .contact-form {
+  order: 1;
+  max-width: 640px; /* formulario más estrecho */
+  width: 100%;
+  margin: 0 auto; /* centrar horizontalmente */
+}
+
+.launch-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 0;
+  border-bottom: 1px solid rgba(110, 184, 255, 0.2);
+}
+
+.launch-item:last-child {
+  border-bottom: none;
+}
+
+.launch-name {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 1.1em;
+  color: #fff;
+  letter-spacing: 0.5px;
+  flex: 1;
+}
+
+.launch-name .mission {
+  color: #6eb8ff;
+}
+
+.launch-country-info {
+  color: #fff;
+  padding: 0 1em;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.launch-country-info .flag {
+  font-size: 1.3em;
+}
+
+.launch-date {
+  color: #4a9eff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 0.95em;
+  min-width: 100px;
+  text-align: right;
+}
